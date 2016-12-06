@@ -59,17 +59,17 @@
     <hr class="featurette-divider">
     <div class="row featurette">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" ng-src="{% raw %}{{{% endraw %}trustUrl('/OrgIntro/' + result['id'].toString() + '/showimage/') {% raw %}}}{% endraw %}" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive" src="/static/img/{% raw %}{{{% endraw %} result['id'] {% raw %}}}{% endraw %}/0.jpg" alt="Generic placeholder image" onerror="this.style.display='none'">
         </div>
         <div class="col-md-7">
           <h2 class="featurette-heading">机构简介</h2>
-          <h4 ng-bind-html="result['abstract']" style="background-color: #ffffff; padding: 10px" ></h4>
+          <h4 ng-bind-html="result['abstract']" style="background-color: #ffffff; padding: 10px; line-height: 150%" ></h4>
         </div>
     </div>
     <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">课程设置</h2>
-          <h4 ng-bind-html="result['course']" style="background-color: #ffffff; padding: 10px"></h4>
+          <h4 ng-bind-html="result['course']" style="background-color: #ffffff; padding: 10px; line-height: 150%"></h4>
         </div>
         <div class="col-md-5">
 
@@ -82,13 +82,13 @@
         </div>
         <div class="col-md-7">
           <h2 class="featurette-heading">服务模式</h2>
-          <h4 ng-bind-html="result['service']" style="background-color: #ffffff; padding: 10px"></h4>
+          <h4 ng-bind-html="result['service']" style="background-color: #ffffff; padding: 10px; line-height: 150%"></h4>
         </div>
     </div>
     <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">硬件设施</h2>
-          <h4 ng-bind-html="result['hardware']" style="background-color: #ffffff; padding: 10px"></h4>
+          <h4 ng-bind-html="result['hardware']" style="background-color: #ffffff; padding: 10px; line-height: 150%"></h4>
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-responsive" src="/static/img/{% raw %}{{{% endraw %} result['id'] {% raw %}}}{% endraw %}/1.jpg" alt="Generic placeholder image" onerror="this.style.display='none'">
@@ -101,14 +101,14 @@
         </div>
         <div class="col-md-7">
           <h2 class="featurette-heading">师资团队</h2>
-          <h4 ng-bind-html="result['team']" style="background-color: #ffffff; padding: 10px"></h4>
+          <h4 ng-bind-html="result['team']" style="background-color: #ffffff; padding: 10px; line-height: 150%"></h4>
         </div>
     </div>
     <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">联系方式</h2>
-          <h4 ng-bind-html="result['phone']" style="background-color: #ffffff; padding: 10px"></h4>
-          <h4 ng-bind-html="result['address']" style="background-color: #ffffff; padding: 10px"></h4>
+          <h4 ng-bind-html="result['phone']" style="background-color: #ffffff; padding: 10px; line-height: 150%"></h4>
+          <h4 ng-bind-html="result['address']" style="background-color: #ffffff; padding: 10px; line-height: 150%"></h4>
         </div>
         <div class="col-md-5">
 
